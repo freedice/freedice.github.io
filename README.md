@@ -1,6 +1,6 @@
-# untitled-dice
+# Free dice
 
-##### Live demo: https://untitled-dice.github.io
+##### Live : https://freedice.github.io
 
 More info (including changelog and FAQ) in the bitcointalk.org thread: https://bitcointalk.org/index.php?topic=1062680
 
@@ -19,7 +19,7 @@ If you want to run your own dice casino, all you need to do is clone/fork this p
 ## Host it on Github
 
 1. Fork this project
-2. Rename the repository from `untitled-dice.github.io` to `{YOUR_USERNAME}.github.io`
+2. Rename the repository from `freedice.github.io` to `{YOUR_USERNAME}.github.io`
 3. Edit the config at the top of `app.js`
 4. Visit `https://{YOUR_USERNAME}.github.io`
 
