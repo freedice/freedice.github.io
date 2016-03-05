@@ -6,7 +6,7 @@ var config = {
   // - Your app's id on moneypot.com
   app_id: 988,                             // <----------------------------- EDIT ME!
   // - Displayed in the navbar
-  app_name: 'Free Dice',
+  app_name: 'THAI Free Dice ยินดีต้อนรับ',
   // - For your faucet to work, you must register your site at Recaptcha
   // - https://www.google.com/recaptcha/intro/index.html
   recaptcha_sitekey: '6LfsCxoTAAAAAHoSgEfleAgVqjMqHFoTgFvgstRw',  // <----- EDIT ME!
@@ -18,7 +18,7 @@ var config = {
   debug: isRunningLocally(),
   // - Set this to true if you want users that come to http:// to be redirected
   //   to https://
-  force_https_redirect: !isRunningLocally(),
+  force_https_redirect: !isRunningLocally(true),
   // - Configure the house edge (default is 1%)
   //   Must be between 0.0 (0%) and 1.0 (100%)
   house_edge: 0.01,
