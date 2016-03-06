@@ -13,7 +13,7 @@ var config = {
   redirect_uri: 'https://freedice.github.io',
   mp_browser_uri: 'https://www.moneypot.com',
   mp_api_uri: 'https://api.moneypot.com',
-  // chat_uri: '//socket.moneypot.com',
+  chat_uri: '//socket.moneypot.com',
   // - Show debug output only if running on localhost
   debug: isRunningLocally(),
   // - Set this to true if you want users that come to http:// to be redirected
