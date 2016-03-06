@@ -6,14 +6,14 @@ var config = {
   // - Your app's id on moneypot.com
   app_id: 988,                             // <----------------------------- EDIT ME!
   // - Displayed in the navbar
-  app_name: 'Play Dice Game with Free Bitcoin (Faucet)',
+  app_name: 'เล่นเกมส์ Dice ด้วยเงินฟรี Bitcoin (เมนู Faucet ด้านล่างซ้าย)',
   // - For your faucet to work, you must register your site at Recaptcha
   // - https://www.google.com/recaptcha/intro/index.html
   recaptcha_sitekey: '6LfsCxoTAAAAAHoSgEfleAgVqjMqHFoTgFvgstRw',  // <----- EDIT ME!
   redirect_uri: 'https://freedice.github.io',
   mp_browser_uri: 'https://www.moneypot.com',
   mp_api_uri: 'https://api.moneypot.com',
-  chat_uri: '//socket.moneypot.com',
+  // chat_uri: '//socket.moneypot.com',
   // - Show debug output only if running on localhost
   debug: isRunningLocally(),
   // - Set this to true if you want users that come to http:// to be redirected
