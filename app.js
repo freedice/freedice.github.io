@@ -6,7 +6,7 @@ var config = {
   // - Your app's id on moneypot.com
   app_id: 988,                             // <----------------------------- EDIT ME!
   // - Displayed in the navbar
-  app_name: 'Simple Dice : Play with Free Bitcoin (Faucet)',
+  app_name: 'Simple Dice Game : Play with Free Bitcoin (Faucet)',
   // - For your faucet to work, you must register your site at Recaptcha
   // - https://www.google.com/recaptcha/intro/index.html
   recaptcha_sitekey: '6LfsCxoTAAAAAHoSgEfleAgVqjMqHFoTgFvgstRw',  // <----- EDIT ME!
