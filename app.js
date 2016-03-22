@@ -468,7 +468,7 @@ var betStore = new Store('bet', {
   nextHash: undefined,
   wager: {
     str: '1',
-    num: 1,
+    num: 0.00000001,
     error: undefined
   },
   multiplier: {
