@@ -472,8 +472,8 @@ var betStore = new Store('bet', {
     error: undefined
   },
   multiplier: {
-    str: '2.00',
-    num: 2.00,
+    str: '2.01',
+    num: 2.02,
     error: undefined
   },
   hotkeysEnabled: false
