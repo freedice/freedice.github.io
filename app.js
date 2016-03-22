@@ -467,7 +467,7 @@ var chatStore = new Store('chat', {
 var betStore = new Store('bet', {
   nextHash: undefined,
   wager: {
-    str: '1',
+    str: '0.00000001',
     num: 0.00000001,
     error: undefined
   },
