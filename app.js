@@ -472,8 +472,8 @@ var betStore = new Store('bet', {
     error: undefined
   },
   multiplier: {
-    str: '2.01',
-    num: 2.02,
+    str: '2.00',
+    num: 2.00,
     error: undefined
   },
   hotkeysEnabled: false
@@ -491,10 +491,10 @@ var betStore = new Store('bet', {
     var n = parseInt(self.state.wager.str, 10);
 
     // If n is a number, ensure it's at least 1 bit
-    if (isFinite(n)) {
-      n = Math.max(n, 1);
-      self.state.wager.str = n.toString();
-    }
+  //  if (isFinite(n)) {
+  //    n = Math.max(n, 1);
+  //    self.state.wager.str = n.toString();
+  //  }
 
     // Ensure wagerString is a number
     if (isNaN(n) || /[^\d]/.test(n.toString())) {
