@@ -467,8 +467,8 @@ var chatStore = new Store('chat', {
 var betStore = new Store('bet', {
   nextHash: undefined,
   wager: {
-    str: '0.00000001',
-    num: 0.00000001,
+    str: '1',
+    num: 1,
     error: undefined
   },
   multiplier: {
@@ -492,23 +492,23 @@ var betStore = new Store('bet', {
 
     // If n is a number, ensure it's at least 1 bit
     if (isFinite(n)) {
-      n = Math.max(n, 0.01);
+      n = Math.max(n, 1);
       self.state.wager.str = n.toString();
     }
 
     // Ensure wagerString is a number
-  //    if (isNaN(n) || /[^\d]/.test(n.toString())) {
-  //    self.state.wager.error = 'INVALID_WAGER';
+      if (isNaN(n) || /[^\d]/.test(n.toString())) {
+      self.state.wager.error = 'INVALID_WAGER';
     // Ensure user can afford balance
-  //  } else if (n * 100 > worldStore.state.user.balance) {
-  //    self.state.wager.error = 'CANNOT_AFFORD_WAGER';
- //     self.state.wager.num = n;
- //   } else {
+    } else if (n * 100 > worldStore.state.user.balance) {
+      self.state.wager.error = 'CANNOT_AFFORD_WAGER';
+      self.state.wager.num = n;
+    } else {
       // wagerString is valid
-  //    self.state.wager.error = null;
-  //    self.state.wager.str = n.toString();
-  //    self.state.wager.num = n;
-  //  }
+      self.state.wager.error = null;
+      self.state.wager.str = n.toString();
+      self.state.wager.num = n;
+    }
 
     self.emitter.emit('change', self.state);
   });
