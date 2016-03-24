@@ -497,18 +497,18 @@ var betStore = new Store('bet', {
     }
 
     // Ensure wagerString is a number
-      if (isNaN(n) || /[^\d]/.test(n.toString())) {
-      self.state.wager.error = 'INVALID_WAGER';
+  //    if (isNaN(n) || /[^\d]/.test(n.toString())) {
+  //    self.state.wager.error = 'INVALID_WAGER';
     // Ensure user can afford balance
-    } else if (n * 100 > worldStore.state.user.balance) {
-      self.state.wager.error = 'CANNOT_AFFORD_WAGER';
-      self.state.wager.num = n;
-    } else {
+  //  } else if (n * 100 > worldStore.state.user.balance) {
+  //    self.state.wager.error = 'CANNOT_AFFORD_WAGER';
+ //     self.state.wager.num = n;
+ //   } else {
       // wagerString is valid
-      self.state.wager.error = null;
-      self.state.wager.str = n.toString();
-      self.state.wager.num = n;
-    }
+  //    self.state.wager.error = null;
+  //    self.state.wager.str = n.toString();
+  //    self.state.wager.num = n;
+  //  }
 
     self.emitter.emit('change', self.state);
   });
