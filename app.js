@@ -467,13 +467,13 @@ var chatStore = new Store('chat', {
 var betStore = new Store('bet', {
   nextHash: undefined,
   wager: {
-    str: '0.00000001',
-    num: 0.00000001,
+    str: '0.00000003',
+    num: 0.00000004,
     error: undefined
   },
   multiplier: {
-    str: '2.00',
-    num: 2.00,
+    str: '3.00',
+    num: 4.00,
     error: undefined
   },
   hotkeysEnabled: false
