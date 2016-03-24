@@ -467,13 +467,13 @@ var chatStore = new Store('chat', {
 var betStore = new Store('bet', {
   nextHash: undefined,
   wager: {
-    str: '0.00000003',
-    num: 0.00000004,
+    str: '0.00000001',
+    num: 0.00000001,
     error: undefined
   },
   multiplier: {
-    str: '3.00',
-    num: 4.00,
+    str: '2.00',
+    num: 2.00,
     error: undefined
   },
   hotkeysEnabled: false
@@ -492,7 +492,7 @@ var betStore = new Store('bet', {
 
     // If n is a number, ensure it's at least 1 bit
     if (isFinite(n)) {
-      n = Math.max(n, 0.01);
+      n = Math.max(n, 0.0001);
       self.state.wager.str = n.toString();
     }
 
